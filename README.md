@@ -12,6 +12,11 @@ This project contains a script for scraping comments from YouTube videos based o
 
 #### Requirements:
 - Python 3.x
+- pip install virtualenv
+- Install virtualenv: pip install virtualenv
+- Create the Virtual Environment: python -m venv youtube
+- Activate the Virtual Environment: cd youtube\Scripts\activate
+- Install Required Packages: pip install google-api-python-client python-dotenv iteration_utilities
 - `google-api-python-client` library
 - `python-dotenv` library
 - `iteration_utilities` library
