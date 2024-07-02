@@ -21,13 +21,13 @@ This project contains a script for scraping comments from YouTube videos based o
 - `iteration_utilities` library
 
 #### Files:
-- `youtube_comment_scraper.py`: Main script to search videos, fetch comments, and save to CSV.
+- `youtube_data.py`: Main script to search videos, fetch comments, and save to CSV.
 - `.env`: Environment file to store the YouTube API key.
 
 #### Usage:
 1. Ensure you have a YouTube Data API key and add it to the `.env` file.
-2. Run the script `youtube_comment_scraper.py`.
+2. Run the script `youtube_data.py`.
 3. Enter hashtags separated by commas when prompted.
-4. The script will fetch comments from videos containing the specified hashtags and save them to a CSV file named `comments_<current_date>.csv`.
+4. The script will fetch comments from videos containing the specified hashtags and save them to a CSV file named `comments.csv`.
 
 
