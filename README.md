@@ -1,33 +1,52 @@
-# youtube_comment_scrapper
-This project provides a structured way to gather and analyze YouTube comments based on hashtags and keywords
+# YouTube Hashtag Analyzer
 
-#### Description:
-This project contains a script for scraping comments from YouTube videos based on specified hashtags. The script uses the YouTube Data API to search for videos containing the specified hashtags, fetches comments from those videos, and optionally saves the comments to a CSV file. This project is useful for collecting and analyzing user comments for sentiment analysis, market research, or other data-driven purposes.
+This Python script analyses YouTube videos associated with specific Roblox hashtags. It fetches video details, statistics, and comments for videos published within specified date ranges.
 
-#### Key Features:
-- **Hashtag Search**: Searches YouTube for videos containing specific hashtags.
-- **Comment Fetching**: Retrieves comments from the identified videos, including replies.
-- **Pagination Handling**: Manages pagination to ensure all comments are fetched.
-- **CSV Export**: Saves the collected comments to a CSV file for further analysis.
+## Working
 
-#### Requirements:
-- Python 3.x
-- **Install virtualenv**: pip install virtualenv
-- **Create the Virtual Environment**: python -m venv youtube
-- **Activate the Virtual Environment**: cd youtube\Scripts\activate
-- **Install Required Packages**: pip install google-api-python-client python-dotenv iteration_utilities
+- Fetch video details for multiple hashtags
+- Collect data for two distinct date ranges (2022-2023 and 2023-2024)
+- Retrieve video statistics (view count, like count, dislike count)
+- Gather comments for each video
+- Combine all data into a single CSV file for each hashtag
+
+## Prerequisites
+
+- Python 3.7+
 - `google-api-python-client` library
-- `python-dotenv` library
-- `iteration_utilities` library
+- `pandas` library
+- YouTube Data API credentials
 
-#### Files:
-- `youtube_data.py`: Main script to search videos, fetch comments, and save to CSV.
-- `.env`: Environment file to store the YouTube API key.
+## Usage
 
-#### Usage:
-1. Ensure you have a YouTube Data API key and add it to the `.env` file.
-2. Run the script `youtube_data.py`.
-3. Enter hashtags separated by commas when prompted.
-4. The script will fetch comments from videos containing the specified hashtags and save them to a CSV file named `comments.csv`.
+1. Set up your YouTube Data API credentials and initialize the `youtube` object (not shown in the provided code).
+2. Run the script:(ipynb file)
+3. When prompted, enter the hashtags you want to analyze, separated by commas.
+4. The script will fetch data for each hashtag and save it to a CSV file named `{hashtag}_combined_data.csv`.
+
+## Main Functions
+
+- `fetch_video_details`: Retrieves basic information about videos for a given hashtag and date range.
+- `fetch_video_statistics`: Collects view counts, like counts, and dislike counts for the videos.
+- `fetch_comments`: Gathers comments for each video.
+- `main`: Orchestrates the data collection process and saves the results to a CSV file.
+
+## Output
+
+The script generates a CSV file for each hashtag with the following columns:
+
+- year
+- date
+- videoId
+- videoUrl
+- title
+- description
+- publishedAt
+- viewCount
+- likeCount
+- dislikeCount
+- textDisplay (comment text)
+- textOriginal (original comment text)
 
 
+This script uses asynchronous programming to improve performance when making multiple API requests. Make sure to respect YouTube's API usage limits and terms of service when using this script.
