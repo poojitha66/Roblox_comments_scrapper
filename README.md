@@ -4,14 +4,15 @@ A modern web application for analyzing YouTube videos associated with specific R
 
 ## 🚀 Live Demo
 
-**[View Live Application](https://youtube-hashtag-analyzer.netlify.app)**
+**[View Live Application]([https://6872b9aa433c6d5349e1f026--youtube-hashtag-analyser.netlify.app/])**
 
 ## 📸 Frontend Preview
 
 ### Main Interface
 The application features a clean, modern interface with multiple sections for comprehensive hashtag analysis:
 
-![YouTube Hashtag Analyzer Interface](https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop)
+<img width="779" height="476" alt="image" src="https://github.com/user-attachments/assets/1c2fdf25-aa27-41ae-b763-b021b5e5bdea" />
+
 
 ### Key Features Showcase
 
