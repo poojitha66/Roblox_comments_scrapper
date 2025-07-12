@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Header } from './components/Header';
 import { HashtagInput } from './components/HashtagInput';
 import { DateRangeSelector } from './components/DateRangeSelector';
